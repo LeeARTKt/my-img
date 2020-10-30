@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cell {
+    float: left;
+}
+.after::after {
+    display: block;
+    content:"";
+    clear: both;
+}
+
+.header {
+    position: fixed;
+    width:100%;
+    height:130px;
+    background:#fff;
+    top:0;
+    z-index: 200;
+    
+}
+.header> .top {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.header> .top> .logo {
+    width: 25%;
+    height: 100%;
+}
+.header> .top> .logo> .logo_pack {
+    width:240px;
+    height: 80px;
+    background: url(../img/logo.png) no-repeat center;
+    background-size: cover;
+    margin-top: 25px;
+}
+.header> .top> .menu {
+    width:75%;
+    height: 100%;
+}
+.header> .top> .menu> .sub {
+    width:100%;
+    height:80px;
+    position: relative;
+}
+.header> .top> .menu> .sub> ul {
+    position: absolute;
+    bottom: 50%;
+    right: 18px;
+    width:200px;
+
+}
+.header> .top> .menu> .sub> ul> li {
+    width:48%;
+    text-align: center;
+    font-size: 12px;
+}
+.header> .top> .menu> .sub> ul> li:first-child {
+    border-right: 1px solid #000;
+    padding-right: 4px;
+}
+.header> .top> .menu> .main {
+    width:100%;
+    margin-top:15px;
+    height:35px;
+}
+.header> .top> .menu> .main> ul {
+
+    width:100%;
+    height:100%;
+}
+.header> .top> .menu> .main> ul> li {
+    width:14%;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    height:100%;
+}
+.header> .top> .menu> .main> ul> li> ul {
+    width:100%;
+    position: absolute;
+    top:35px;
+    left:0px;
+    max-height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index:100;
+    
+    
+}
+.header> .top> .menu> .main> ul> li> ul> li {
+}  
+
+.header> .top> .menu> .main> ul> li> ul> li > a {
+    line-height: 30px;
+}  
+.header> .top> .menu> .main> ul> li:hover> a {
+    color:#f8b501;
+}
+ .header> .top> .menu> .main> ul> li:hover> ul {
+    max-height: 157px;
+    transition: max-height 0.5s;
+}
+
+.header > .menu_bg {
+    width:100%;
+    height:0px;
+    background-image: url("../img/top_bar.jpg");
+    position: absolute;
+    top:130px;
+    transition: 0.5s;
+    z-index:99;
+}
+
+.header > .menu_bg.active {
+    height: 157px;
+    border-bottom: 2px solid #fff;
+    transition: 0.5s;
+}
+
+.header> .top> .menu> .main> ul> li> ul> li:hover> a {
+    font-weight: bold;
+}
+
+
+/* .visual {
+    margin-top: 130px;
+    width:100%;
+
+
+}
+.visual> .slider {
+    width:100%;
+    padding-bottom: 31%;
+
+    
+}
+.visual> .img1 {
+    background: #0f0;
+}
+.visual> .img2 {
+    background: #00f;
+}
+.visual> .img3 {
+    background: #f0f;
+}
+.visual> .img4 {
+    background: #0ff;
+} */
+
+
+.visual {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.visual .slider .boxA .A-img {
+    width:100%;
+    padding-bottom: 31%;
+    
+}
+.visual .slider .boxA> .img1 {
+    background: url(../img/main_귀묘한스무디.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img2 {
+    background: url(../img/main_곡물3종.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img3 {
+    background: url(../img/main_한끼라떼.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img4 {
+    background: url(../img/main_몽땅쉐이크.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img5 {
+    background: url(../img/main_긴페스츄리와플흑당.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img6 {
+    background: url(../img/main_콜드브루-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual .slider .boxA> .img7 {
+    background: url(../img/main_달고나크런치-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.visual> .slider .slick-prev {
+    left: 15px;
+    z-index:1;
+}
+.visual> .slider .slick-next {
+    right: 30px;
+}
+.visual> .slider .slick-dots {
+    bottom:20px;
+}
+.visual .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.visual .slick-dots li button::before {
+    color:white;
+    font-size: 30px;
+    
+}
+
+.slick-prev::before {
+    content: "<";
+}
+.slick-next::before {
+    content: ">";
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+
+}
+
+
+.section> .section1> .sec1-1 {
+    width:100%;
+    margin-top: 100px;
+
+}
+
+.section> .section1> .sec1-1> .boxA {
+    width:15.5%;
+    padding-bottom: 30%;
+}
+.section> .section1> .sec1-1> .boxB {
+    background: url(../img/main_sec3.jpg) no-repeat center right;
+    background-size: cover;
+    width:42%;
+    padding-bottom: 30%;
+}
+
+.section> .section1> .sec1-1> .boxC {
+    background: url(../img/main_sec2.jpg) no-repeat center right;
+    background-size: cover;
+    width:42%;
+    padding-bottom: 30%;
+    margin-left: 0.5%;
+}
+.section> .section1> .sec1-2 {
+    width:100%;
+    margin-top: 20px;
+
+}
+.section> .section1> .sec1-2> .boxA {
+    width:15.5%;
+    padding-bottom: 30%;
+    float: right;
+}
+.section> .section1> .sec1-2> .boxB {
+    background: url(../img/main_sec4.jpg) no-repeat center right;
+    background-size: cover;
+    width:42%;
+    padding-bottom: 30%;
+    float: right;
+}
+
+.section> .section1> .sec1-2> .boxC {
+    background: url(../img/main_sec5-1.jpg) no-repeat center right;
+    background-size: cover;
+    width:42%;
+    padding-bottom: 30%;
+    margin-right: 0.5%;
+    float: right;
+}
+
+
+
+.section> .section1> .sec2 {
+    width:100%;
+    padding-bottom: 15%;
+    margin: 100px 0;
+    background: url(../img/main_sec1.jpg) no-repeat center;
+    background-size: cover;
+}
